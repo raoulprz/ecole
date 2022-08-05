@@ -1,0 +1,136 @@
+.elementor-button,
+.elementor-button.elementor-size-md,
+.fea-submit-button,
+input[type="submit"],
+[type="button"],
+[type="submit"],
+button,
+.elementor-field-type-submit .elementor-button,
+.btn {
+    position: relative;
+    color: $secondary;
+    border: 1px solid $secondary;
+    background: transparent;
+    fill: transparent;
+    min-height: 50px;
+    padding: 0 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: $font-family-base;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 50px;
+    cursor: pointer;
+
+    &:visited {
+        color: $secondary;
+    }
+
+    &:focus,
+    &:hover {
+        transition: all 0.3s ease;
+        color: #fff !important;
+        background-color: $secondary;
+        outline: none;
+        text-decoration: none;
+    }
+
+    &--white {
+        border-color: #fff;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            background-color: white;
+            color: $secondary !important;
+        }
+    }
+
+    &--fullwidth {
+        width: 100%;
+    }
+
+    &--big {
+        font-size: 20px;
+        padding: 0 50px;
+    }
+
+    &--loading {
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 0.8em;
+            height: 0.8em;
+            margin-left: 5px;
+            border: 2px solid currentColor;
+            border-bottom: 2px solid transparent;
+            border-radius: 50%;
+            animation: fa-spin 1s infinite linear;
+        }
+    }
+    &--shortcode {
+        margin-bottom: 10px;
+    }
+}
+.btn--txt,
+.btn--txt .elementor-button {
+    color: $text;
+    border: none;
+    background: transparent;
+    min-height: auto;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 400;
+    font-family: $font-family-base;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.5em;
+    &:focus,
+    &:hover {
+        color: $primary !important;
+        background-color: transparent;
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+a.btn--neg,
+.btn--neg .elementor-button {
+    background-color: $text;
+    color: white;
+    &:hover,
+    &:focus {
+        background-color: white;
+        color: $secondary !important;
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.btn {
+    a {
+        color: $secondary;
+        transition: color 0.3s ease;
+    }
+    &:focus,
+    &:hover {
+        transition: all 0.3s ease;
+        a {
+            color: #fff !important;
+        }
+    }
+}

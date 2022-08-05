@@ -1,0 +1,56 @@
+.k-pop {
+    z-index: 20;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(9, 0, 67, 0.75);
+    &--flex {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &--container {
+        position: relative;
+        max-width: 640px;
+        width: 100%;
+        padding: 50px 100px;
+        border-radius: 50px;
+        background-color: white;
+        @media (max-width: $screen-sm) {
+            padding: 30px;
+            border-radius: 0;
+            max-width: 100%;
+        }
+    }
+    &--closer {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 25px;
+        line-height: 25px;
+        color: $primary;
+        z-index: 10;
+        cursor: pointer !important;
+        &:hover {
+            color: $accent;
+        }
+    }
+    &--map {
+        .k-pop--container {
+            padding: 0;
+            overflow: hidden;
+        }
+    }
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background: #d6d6d6;
+}

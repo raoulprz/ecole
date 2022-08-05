@@ -1,0 +1,20 @@
+.search {
+    &.grid {
+        .search-grid {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 22.5px -22.5px;
+            .grid-element {
+                width: 33.333%;
+                padding: 22.5px;
+                margin-bottom: 22.5px;
+                @media (max-width: $screen-md) {
+                    width: 50%;
+                }
+                @media (max-width: $screen-sm) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

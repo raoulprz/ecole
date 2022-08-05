@@ -1,0 +1,62 @@
+#account-menu {
+    ul {
+        list-style-type: none;
+    }
+    .menu {
+        width: 100%;
+        padding: 0;
+        .menu-item {
+            margin-bottom: 15px;
+            a {
+                display: inline-block;
+                width: 100%;
+                background-color: $primary;
+                color: white !important;
+                text-transform: uppercase;
+                border-radius: 6px;
+                margin-bottom: 2px;
+                padding: 5px 12px;
+                font-weight: 600;
+                font-size: 0.9em;
+                &:hover {
+                    background-color: $accent;
+                }
+            }
+            &.current-menu-item {
+                a {
+                    background-color: $text;
+                }
+            }
+            > .sub-menu {
+                padding: 0 0 15px 10px;
+                // display: none;
+                .menu-item {
+                    margin-bottom: 0;
+                    a {
+                        background-color: $background;
+                        color: $text !important;
+                        &:hover {
+                            background-color: $accent;
+                            color: white !important;
+                        }
+                    }
+                    &.current-menu-item {
+                        a {
+                            background-color: $text;
+                            color: white !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#account-content {
+    .account {
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+}

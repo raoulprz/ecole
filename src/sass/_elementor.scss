@@ -1,0 +1,42 @@
+/**
+ *  Elementor style
+ */
+
+//Menu sticky style
+.main-nav {
+    transition: all 300ms ease;
+    background-color: rgba(0, 0, 0, 0);
+    &.elementor-sticky--effects {
+        padding: 8px (2 * $size);
+        background-color: rgba(0, 0, 0, 0.75);
+        .no-scroll {
+            display: none;
+        }
+        > .elementor-container {
+            min-height: (2 * $size) !important;
+        }
+        .main-logo {
+            img,
+            .jet-inline-svg {
+                max-width: (4 * $size) !important;
+            }
+        }
+        .main-menu {
+            .elementor-widget-container {
+                margin-top: 6px;
+                .menu-item {
+                    > a {
+                        padding: 6px 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Background images positions
+.elementor-section {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

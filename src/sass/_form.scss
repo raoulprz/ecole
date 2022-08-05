@@ -1,0 +1,265 @@
+.elementor-form,
+form {
+    input[type="date"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="url"],
+    select,
+    textarea .quform-field,
+    input {
+        color: $secondary;
+        border: 1px solid $primary;
+        background: transparent;
+        min-height: 50px;
+        padding: 14px 24px;
+        border-radius: 20px;
+        font-family: $font-family-base;
+        display: inline-block;
+        vertical-align: middle;
+        transition: color 0.3s ease;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 20px;
+        &:hover,
+        &:active,
+        &:focus-visible,
+        &:focus {
+            border: 1px solid $secondary;
+            outline: none;
+        }
+    }
+    textarea {
+        padding: 14px 24px;
+    }
+    label {
+        font-size: 0.85em;
+        color: $primary;
+        padding-left: 10px;
+    }
+    .description {
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+    .elementor-field-group {
+        .elementor-field-textual {
+            color: $secondary;
+            border: 1px solid $primary;
+            background: transparent;
+            min-height: 50px;
+            padding: 14px 24px;
+            border-radius: 20px;
+            font-family: $font-family-base;
+            display: inline-block;
+            vertical-align: middle;
+            transition: color 0.3s ease;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 20px;
+            &:hover,
+            &:focus {
+                border-color: $secondary;
+            }
+        }
+    }
+    .acf-fields {
+        > .acf-field {
+            padding: 0;
+            margin-bottom: 15px;
+            &.acf-field-upload-image {
+                background-color: $background;
+                padding-top: 15px;
+                padding-left: 15px;
+                border-top: 1px solid $primary;
+            }
+            &.acf-field-message {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 0;
+                color: $text;
+            }
+            .acf-button {
+                border: 1px solid $text;
+                color: $text;
+                border-radius: 20px;
+                padding: 6px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                margin: 0 10px;
+                &:hover {
+                    background-color: $text;
+                    color: white;
+                    transition: all ease 300ms;
+                }
+            }
+            .fea-submit-buttons {
+                justify-content: flex-start !important;
+                margin-top: 20px !important;
+                flex-wrap: wrap;
+                @media (max-width: $screen-sm) {
+                    justify-content: center;
+                    margin-left: 10px;
+                }
+                button {
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            .acf-gallery-sort {
+                display: none;
+            }
+            .wp-editor-tabs {
+                button {
+                    border: 1px solid $primary;
+                    min-height: inherit;
+                    margin-bottom: 5px;
+                    &:hover {
+                        border-color: $accent;
+                        background-color: $accent;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .acf-field input[type="text"],
+    .acf-field input[type="password"],
+    .acf-field input[type="date"],
+    .acf-field input[type="datetime"],
+    .acf-field input[type="datetime-local"],
+    .acf-field input[type="email"],
+    .acf-field input[type="month"],
+    .acf-field input[type="number"],
+    .acf-field input[type="search"],
+    .acf-field input[type="tel"],
+    .acf-field input[type="time"],
+    .acf-field input[type="url"],
+    .acf-field input[type="week"],
+    .acf-field textarea,
+    .acf-field select {
+        padding: 14px 24px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .acf-label {
+        label {
+            font-size: 16px;
+            margin-top: 20px !important;
+            color: $text;
+        }
+    }
+    .select2-selection {
+        border: 1px solid $primary !important;
+        border-radius: 20px !important;
+        min-height: 50px !important;
+        input[type="search"] {
+            font-size: 16px !important;
+            line-height: 20px !important;
+            padding: 0 !important;
+            margin-top: 0 !important;
+        }
+        &__rendered {
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+            li {
+                font-size: 16px !important;
+                line-height: 20px !important;
+                margin-top: 14px !important;
+            }
+        }
+    }
+    .timetable_repeater {
+        .acf-repeater {
+            .acf-table {
+                border: none !important;
+                background-color: transparent;
+                tr {
+                    td,
+                    th {
+                        border: none !important;
+                        background-color: transparent;
+                    }
+                }
+            }
+            .acf-row-handle {
+                .acf-icon {
+                    display: block;
+                    &.-duplicate {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .acf-label {
+            label {
+                margin-bottom: -40px !important;
+            }
+        }
+    }
+    .step-count {
+        display: none !important;
+    }
+    .jet-form-col__start {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    &.layout-row {
+        .jet-form-col {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+    .jet-form-repeater__row-remove {
+        button {
+            padding: 0 20px;
+        }
+    }
+    .jet-form__fields-group {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+.fea-modal-content {
+    padding: 60px;
+    border-radius: 60px;
+    @media (max-width: $screen-sm) {
+        padding: 30px;
+        border-radius: 0;
+        max-width: 100%;
+    }
+    .close-modal {
+        top: -20px;
+        right: -20px;
+        background-color: $primary;
+        color: white;
+        &:hover {
+            background-color: $accent;
+        }
+        @media (max-width: $screen-sm) {
+            top: 10px;
+            right: 10px;
+        }
+    }
+}
+
+.frontend-admin-tabs-wrapper {
+    border-bottom: 1px solid $primary;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    .form-tab {
+        font-size: 0.8em;
+        color: $primary;
+        text-align: center;
+        &.active {
+            background-color: $primary;
+            color: white;
+            border-radius: 20px;
+            padding: 5px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.video {
+    &__blocks {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $screen-md-min) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__block {
+        width: 100%;
+        max-width: 785px;
+        margin: 0;
+
+        @media (min-width: $screen-md-min) {
+            width: 46%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+
+        @media (min-width: $screen-sm-min) {
+            margin-top: 20px;
+        }
+
+        @media (min-width: $screen-md-min) {
+            width: 50%;
+            margin-top: 0;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    &__description {
+        max-width: 500px;
+
+        @media (min-width: $screen-sm-min) {
+            margin-top: 10px;
+        }
+
+        @media (min-width: $screen-md-min) {
+            max-width: unset;
+        }
+    }
+
+    &__btn {
+        margin-top: 20px;
+
+        @media (min-width: $screen-sm-min) {
+            margin-top: 35px;
+        }
+    }
+
+    &--right {
+        .video__blocks {
+            @media (min-width: $screen-md-min) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    &--top {
+        .video__blocks {
+            flex-direction: column;
+        }
+
+        .video__block {
+            width: 100%;
+        }
+
+        .video__content {
+            margin-top: 20px;
+            width: 100%;
+
+            @media (min-width: $screen-md-min) {
+                width: 60%;
+            }
+        }
+    }
+
+    &--bottom {
+        .video__blocks {
+            flex-direction: column-reverse;
+        }
+
+        .video__block {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .video__content {
+            width: 100%;
+
+            @media (min-width: $screen-md-min) {
+                width: 60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+/**
+ * Admin Styles
+ */
+
+// defining the colors
+$primary: #c50b50;
+$secondary: #4f304a;
+$text: #4f304a;
+$accent: #4f304a;
+$background: #f1f1f1;
+$borderColor: #dbc3cc;
+$transparent: rgba(255, 255, 255, 0);
+
+#footer-upgrade {
+    display: none;
+}
+.update-nag {
+    display: none;
+}
+
+.acf-hidden-field {
+    display: none;
+}
+
+// ACF Admin Styles
+.acf-postbox {
+    background: none !important;
+    border: none !important;
+    > .postbox-header {
+        border: 1px solid $borderColor;
+    }
+    > .acf-fields {
+        > .acf-field {
+            padding: 0 !important;
+        }
+    }
+    * {
+        border-color: $borderColor !important;
+        color: $text !important;
+        a {
+            color: $primary;
+            &:hover {
+                color: $text;
+            }
+            &.acf-button {
+                background-color: $primary;
+                color: white !important;
+                &:hover {
+                    background-color: $text;
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+.postbox-header,
+.acf-fc-layout-handle {
+    background-color: white;
+    // border: 1px solid $primary !important;
+    color: $primary !important;
+    .acf-fc-layout-order {
+        background-color: $primary !important;
+        color: white !important;
+    }
+}
+
+.acf-tab-wrap {
+    background-color: $text !important;
+    .acf-tab-group {
+        display: flex;
+        gap: 10px;
+        padding: 10px 0 0;
+        li {
+            display: block;
+            margin: 0;
+            width: 100%;
+            // border: none !important;
+            a {
+                color: $text;
+                // border: 1px solid $text !important;
+            }
+            &.active {
+                a {
+                    // border: 1px solid $primary !important;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.acf-customizer {
+    .acf-fields {
+        > .acf-field {
+            padding: 15px !important;
+        }
+    }
+}
+
+#acf-group_page,
+#acf-group_account,
+#acf-group_establishments,
+#acf-group_offers,
+#acf-group_booking,
+#acf-group_relationship,
+#acf-group_page_options,
+#acf-group_content {
+    > .acf-fields {
+        > .acf-field {
+            padding: 15px !important;
+            background-color: white;
+        }
+    }
+}

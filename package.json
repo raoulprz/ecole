@@ -1,0 +1,35 @@
+{
+  "name": "kalysto-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "blazy": "^1.8.2",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.3",
+    "bootstrap-sass": "^3.4.1",
+    "botstrap": "^0.20.1",
+    "jquery": "^3.4.1",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.7.1"
+  }
+}

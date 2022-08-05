@@ -1,0 +1,81 @@
+.jet-filter {
+    .jet-filter-label {
+        color: $primary;
+        font-weight: 300;
+        font-family: $font-family-base;
+        margin-bottom: 10px;
+    }
+    .jet-search-filter__input {
+        color: $secondary;
+        border: 1px solid $primary;
+        background: transparent;
+        min-height: 50px;
+        padding: 14px 24px;
+        border-radius: 20px;
+        font-family: $font-family-base;
+        display: inline-block;
+        vertical-align: middle;
+        transition: color 0.3s ease;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        &:hover,
+        &:active,
+        &:focus-visible,
+        &:focus {
+            border: 1px solid $secondary;
+            outline: none;
+        }
+    }
+    .jet-select {
+        .jet-select__control {
+            color: $secondary;
+            border: 1px solid $primary;
+            background: transparent;
+            min-height: 50px;
+            padding: 14px 24px;
+            border-radius: 20px;
+            font-family: $font-family-base;
+            display: inline-block;
+            vertical-align: middle;
+            transition: color 0.3s ease;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            &:hover,
+            &:active,
+            &:focus-visible,
+            &:focus {
+                border: 1px solid $secondary;
+                outline: none;
+            }
+        }
+    }
+}
+.jet-active-filters {
+    margin-bottom: 30px;
+    .jet-active-filter {
+        background-color: $text;
+        color: white;
+        font-weight: 600;
+        font-size: 0.8em;
+        padding: 0 15px 0 10px !important;
+        border-radius: 3px;
+        transition: background-color ease 200ms;
+        .jet-active-filter__remove {
+            right: 3px;
+        }
+        &:hover {
+            background-color: $accent;
+            transition: background-color ease 300ms;
+        }
+    }
+}
+
+.hide-apply {
+    .apply-filters__button {
+        display: none;
+    }
+}

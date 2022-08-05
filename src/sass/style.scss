@@ -1,0 +1,41 @@
+/*!
+Theme Name: Ecole
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Theme adapted by RPE
+Author: Raoul Pérez
+Author URI: https://raoulprz.ch/
+Template: hello-elementor
+Version: 1.0
+Text Domain: school
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, admin-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/**
+ * Vendor
+ */
+
+// General styles
+@import "bootstrap";
+@import "variables";
+@import "styles";
+@import "elementor";
+@import "section";
+@import "typo";
+@import "mixins";
+@import "form";
+@import "filters";
+
+// Partials
+@import "partials/btn";
+@import "partials/popup";
+@import "partials/buttons";
+@import "partials/posts";
+@import "partials/search";
+@import "partials/carousel";
+@import "partials/account";
+
+// Flex
+@import "flex/content";
+@import "flex/video";

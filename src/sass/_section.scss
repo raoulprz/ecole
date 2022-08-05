@@ -1,0 +1,21 @@
+.section {
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+    &--buttons {
+        margin-top: -30px;
+    }
+
+    &--block_infos {
+        margin-bottom: 15px;
+    }
+
+    &--elementor_templates_list {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    > .container-fluid {
+        padding: 0 !important;
+    }
+}
